@@ -1,6 +1,7 @@
 # The Book Shop
 
 Welcome to My React Bookstore App! This application allows users to browse, search, and purchase books online. It includes multiple pages/components, including Home, Book Listing, Book Details, Shopping Cart, and Checkout pages. Users can enjoy features such as book search, book filtering, adding/removing books from the cart, and placing orders.
+## Hosted Link: https://the-book-shop-ssd.netlify.app
 
 ## Technologies Used
 
