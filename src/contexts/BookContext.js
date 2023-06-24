@@ -9,6 +9,8 @@ const BookContextProvider =(props)=> {
     const [freeBooks, setFreeBooks] = useState([]);
     const[cartItems,setCartItems]=useState([]);
     const [cartTotal,setCartTotal]=useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
 
     useEffect(() => {
         fetchBooks();
@@ -37,7 +39,9 @@ const BookContextProvider =(props)=> {
     }, [books])
 
 return (
-  <BookContext.Provider value={{ books, isLoading, freeBooks, cartItems, setCartItems, cartTotal, setCartTotal }}> 
+  <BookContext.Provider value={{ books, isLoading, freeBooks,
+   cartItems, setCartItems, cartTotal, setCartTotal,
+   isModalOpen, setIsModalOpen }}> 
     {props.children}
   </BookContext.Provider>
 );
